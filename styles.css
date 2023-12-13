@@ -13,8 +13,8 @@ body {
 
 .container::before {
     content: "";
-    background: url("https://image.tmdb.org/t/p/original/kcHFJr3aFwH0f580htRvD7ktcig.jpg");
-    background-size: cover;
+    background: url("./images/20231128_231022.jpg");
+    background-size: contain;
     background-position: center;
     position: absolute;
     top: 0;
@@ -23,6 +23,12 @@ body {
     width: 100%;
     z-index: -1;
     opacity: 0.9;
+}
+
+@media screen and (max-width: 768px) {
+    .container::before {
+        background-size: cover;
+    }
 }
 
 .container {
@@ -51,6 +57,18 @@ body {
     font-size: 1.5rem;
 }
 
+.container-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-content .content-item {
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
 .join-button {
     background: #fff;
     color: #000;
@@ -77,11 +95,15 @@ body {
     color: #fff;
 }
 
+.timer-box {
+    font-weight: 700;
+}
+
 .timer {
     font-size: 2rem;
     font-weight: 700;
     color: #fff;
-    background: #000;
+    background: #7d0a7d;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     margin-bottom: 1rem;
