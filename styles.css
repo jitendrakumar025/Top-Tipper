@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+    text-shadow: 1px 1px 1px #000;
+}
+
+body {
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container::before {
+    content: "";
+    background: url("https://image.tmdb.org/t/p/original/kcHFJr3aFwH0f580htRvD7ktcig.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.container-headings {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.container-headings h1 {
+    font-size: 2rem;
+}
+
+.container-headings h2 {
+    font-size: 1.5rem;
+}
+
+.join-button {
+    background: #fff;
+    color: #000;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.join-button:hover {
+    background: #000;
+    color: #fff;
+}
+
+.join-button a {
+    text-decoration: none;
+    color: #000;
+}
+
+.join-button:hover a {
+    color: #fff;
+}
+
+.timer {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    background: #000;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
